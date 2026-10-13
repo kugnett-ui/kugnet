@@ -1,15 +1,174 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NetTools — DNS, WHOIS & IP Lookup</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    
+    <!-- Primary Meta Tags -->
+    <title>NetTools — проверка доменов, DNS записей и IP адресов | WHOIS, DNS Lookup</title>
+    <meta name="title" content="NetTools — проверка доменов, DNS записей и IP адресов | WHOIS, DNS Lookup" />
+    <meta name="description" content="Бесплатный онлайн-сервис для проверки доступности доменов, просмотра DNS записей (A, AAAA, MX, NS, TXT, CNAME), WHOIS информации и геолокации IP адресов. Быстро, точно, без регистрации." />
+    <meta name="keywords" content="проверка домена, DNS lookup, WHOIS, IP lookup, проверка IP, DNS записи, доступность домена, geolocation IP, проверить домен, DNS records, A запись, MX запись, NS запись, TXT запись, CNAME, AAAA, whois domain, ip geolocation, проверить айпи, определить ip, проверить сайт" />
+    <meta name="author" content="NetTools" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="yandex" content="index, follow" />
+    <meta name="language" content="Russian" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Yandex verification (placeholder) -->
+    <meta name="yandex-verification" content="" />
+    <!-- Google verification (placeholder) -->
+    <meta name="google-site-verification" content="" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nettools.dev/" />
+    
+    <!-- Hreflang for internationalization -->
+    <link rel="alternate" hreflang="ru" href="https://nettools.dev/" />
+    <link rel="alternate" hreflang="en" href="https://nettools.dev/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://nettools.dev/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nettools.dev/" />
+    <meta property="og:title" content="NetTools — проверка доменов, DNS записей и IP адресов" />
+    <meta property="og:description" content="Бесплатный онлайн-сервис для проверки доступности доменов, просмотра DNS записей и геолокации IP адресов. Быстро, точно, без регистрации." />
+    <meta property="og:image" content="https://nettools.dev/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="NetTools" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://nettools.dev/" />
+    <meta name="twitter:title" content="NetTools — проверка доменов, DNS записей и IP адресов" />
+    <meta name="twitter:description" content="Бесплатный онлайн-сервис для проверки доступности доменов, просмотра DNS записей и геолокации IP адресов." />
+    <meta name="twitter:image" content="https://nettools.dev/og-image.png" />
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#030712" />
+    <meta name="msapplication-TileColor" content="#030712" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://dns.google" />
+    <link rel="preconnect" href="https://rdap.org" />
+    <link rel="preconnect" href="https://ip-api.com" />
+    <link rel="dns-prefetch" href="https://dns.google" />
+    <link rel="dns-prefetch" href="https://rdap.org" />
+    <link rel="dns-prefetch" href="https://ip-api.com" />
+    
+    <!-- Structured Data - WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "NetTools",
+      "url": "https://nettools.dev/",
+      "description": "Бесплатный онлайн-сервис для проверки доступности доменов, просмотра DNS записей (A, AAAA, MX, NS, TXT, CNAME), WHOIS информации и геолокации IP адресов.",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "DNS Lookup (A, AAAA, CNAME, MX, NS, TXT, SOA, CAA, SRV)",
+        "WHOIS Domain Lookup",
+        "Domain Availability Check",
+        "IP Address Geolocation",
+        "IP to Location mapping"
+      ],
+      "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+      "inLanguage": ["ru", "en"]
+    }
+    </script>
+    
+    <!-- Structured Data - FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как проверить DNS записи домена?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Введите доменное имя в поле DNS Lookup, выберите тип записи (A, AAAA, MX, NS, TXT, CNAME и другие) и нажмите Lookup. Сервис покажет все найденные записи с TTL и данными."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как узнать, свободен ли домен?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Перейдите на вкладку WHOIS, введите доменное имя и нажмите Check. Если домен свободен, вы увидите зелёный индикатор. Если зарегистрирован — информацию о владельце, датах регистрации и nameservers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как определить местоположение по IP адресу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На вкладке IP Lookup введите IP адрес или нажмите кнопку My IP для определения вашего адреса. Сервис покажет страну, город, провайдера, координаты и другую информацию."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие типы DNS записей поддерживаются?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Поддерживаются все основные типы DNS записей: A (IPv4), AAAA (IPv6), CNAME (алиас), MX (почта), NS (серверы имён), TXT (текстовые), SOA (авторитетная запись), CAA (сертификаты), SRV (сервисы)."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://nettools.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "DNS Lookup",
+          "item": "https://nettools.dev/#dns"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "WHOIS",
+          "item": "https://nettools.dev/#whois"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "IP Lookup",
+          "item": "https://nettools.dev/#ip"
+        }
+      ]
+    }
+    </script>
+
     <style>
-      /* 内联样式确保主题色立即生效，避免闪烁 */
       html,
       body {
         margin: 0;
@@ -17,81 +176,13 @@
         width: 100%;
         height: 100%;
       }
-      html.light,
-      html.light body {
-        background-color: #ffffff !important;
-        color: #000000;
-      }
-      html.dark,
-      html.dark body {
-        background-color: #1a1a1a !important;
-        color: #ffffff;
+      html {
+        background: #030712;
       }
     </style>
-    <script>
-      // 在 React 加载前立即设置主题，避免闪烁
-      (function () {
-        const isInIframe = window.self !== window.top;
-
-        function applyThemeToDOM(theme) {
-          document.documentElement.classList.remove("light", "dark");
-          document.documentElement.classList.add(theme);
-          document.documentElement.setAttribute("data-theme", theme);
-        }
-
-        if (isInIframe) {
-          // 监听父窗口主动推送的主题消息
-          window.addEventListener("message", function (event) {
-            if (event.data && typeof event.data.theme === "string") {
-              const theme = event.data.theme;
-              if (theme === "light" || theme === "dark") {
-                applyThemeToDOM(theme);
-              }
-            }
-          });
-        } else {
-          // 非 iframe 环境，使用默认 light 主题
-          applyThemeToDOM("light");
-        }
-      })();
-    </script>
-      <script>
-      (function () {
-        if (window.self === window.top) return;
-        var reported = {};
-        window.addEventListener("error", function (event) {
-          // 资源加载失败的 error 事件没有 message，此处仅上报 JS 运行时错误
-          if (!event || !event.message) return;
-          var key =
-            event.message + "|" + (event.filename || "") + "|" + (event.lineno || 0);
-          if (reported[key]) return; // 相同错误只上报一次，避免渲染循环刷屏
-          reported[key] = true;
-          try {
-            window.parent.postMessage(
-              {
-                type: "sandbox-runtime-error",
-                payload: {
-                  message: String(event.message).slice(0, 500),
-                  filename: event.filename || "",
-                  lineno: event.lineno || 0,
-                  colno: event.colno || 0,
-                  stack:
-                    event.error && event.error.stack
-                      ? String(event.error.stack).slice(0, 2000)
-                      : ""
-                }
-              },
-              "*"
-            );
-          } catch (e) {
-            /* 上报失败不影响页面运行 */
-          }
-        });
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

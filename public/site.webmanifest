@@ -1,0 +1,20 @@
+{
+  "name": "NetTools — DNS, WHOIS & IP Lookup",
+  "short_name": "NetTools",
+  "description": "Бесплатный онлайн-сервис для проверки доменов, DNS записей и IP адресов",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "developer tools"],
+  "lang": "ru"
+}
