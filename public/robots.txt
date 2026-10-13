@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://dns.chebenzin.ru/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Yandex specific
+User-agent: Yandex
+Allow: /
+Disallow: /api/
+Clean-param: lang&utm_source&utm_medium&utm_campaign
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Allow: /*.css
+Allow: /*.js
