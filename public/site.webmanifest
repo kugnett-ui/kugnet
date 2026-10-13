@@ -1,6 +1,6 @@
 {
-  "name": "NetTools — DNS, WHOIS & IP Lookup",
-  "short_name": "NetTools",
+  "name": "NetTools for Insales Tech — DNS, WHOIS & IP Lookup",
+  "short_name": "NetTools for Insales Tech",
   "description": "Бесплатный онлайн-сервис для проверки доменов, DNS записей и IP адресов",
   "start_url": "/",
   "display": "standalone",

@@ -53,7 +53,7 @@ function App() {
       <header className="relative border-b border-gray-800/50 bg-gray-950/80 backdrop-blur-xl sticky top-0 z-50" role="banner">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex items-center justify-between">
-            <a href="/" className="flex items-center gap-3" aria-label="NetTools — Главная">
+            <a href="/" className="flex items-center gap-3" aria-label="NetTools for Insales Tech — Главная">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -61,7 +61,7 @@ function App() {
               </div>
               <div>
                 <h1 className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-violet-400 to-emerald-400 bg-clip-text text-transparent">
-                  NetTools
+                  NetTools for Insales Tech
                 </h1>
                 <p className="text-gray-500 text-xs hidden sm:block">DNS • WHOIS • IP Lookup</p>
               </div>
@@ -106,7 +106,7 @@ function App() {
             Проверка доменов, DNS записей и IP адресов онлайн
           </h2>
           <p className="text-gray-400 text-base max-w-3xl">
-            NetTools — бесплатный инструмент для сетевой диагностики. Проверяйте доступность доменов, 
+            NetTools for Insales Tech — бесплатный инструмент для сетевой диагностики. Проверяйте доступность доменов, 
             просматривайте все типы DNS записей (A, AAAA, MX, NS, TXT, CNAME, SOA, CAA, SRV), 
             получайте WHOIS информацию и определяйте геолокацию IP адресов. Работает быстро, без регистрации.
           </p>
@@ -162,7 +162,7 @@ function App() {
         {/* SEO Content - Features Section */}
         <section className="mt-12" aria-label="Возможности сервиса">
           <h2 className="text-2xl font-bold text-white mb-6">
-            Возможности NetTools
+            Возможности NetTools for Insales Tech
           </h2>
           <div className="grid gap-4 sm:grid-cols-3">
             <div className="bg-gray-800/30 rounded-xl p-5 border border-gray-700/30">
@@ -207,7 +207,7 @@ function App() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-gray-500 text-sm">
-              © 2026 NetTools — Инструменты сетевой диагностики. Бесплатно и без регистрации.
+              © 2026 NetTools for Insales Tech — Инструменты сетевой диагностики. Бесплатно и без регистрации.
             </p>
             <div className="flex items-center gap-4 text-gray-500 text-xs">
               <span className="flex items-center gap-1">
